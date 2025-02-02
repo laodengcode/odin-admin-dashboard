@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px repeat(4, 1fr);
+    grid-template-rows: 50px 50px 1fr;
+    height: 100%;
+}
+
+.sidebar {
+    grid-area: 1/1/4/1;
+}
+
+.navbar {
+    grid-area: 1/2/2/6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.useractions {
+    grid-area: 2/2/3/6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.content {
+    grid-area: 3/2/4/6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.content .projects {
+    grid-area: 1/1/1/2;
+}
+
+.content .sidebarinfo {
+    grid-area: 1/2/1/3;
+}
