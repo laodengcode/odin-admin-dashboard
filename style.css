@@ -65,7 +65,36 @@ a {
 .navbar {
     grid-area: 1/2/2/6;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.navbar>form {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    max-height: 24px;
+    align-items: center;
+    column-gap: 8px;
+    max-width: 600px;
+}
+
+.navbar>form>input {
+    border-radius: 8px;
+}
+
+.navbar .usernavinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+}
+
+.navbar>form>button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar svg {
+    max-width: 24px;
+    max-height: 24px;
 }
 
 .useractions {
