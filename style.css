@@ -67,6 +67,8 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
+    align-items: center;
+    column-gap: 34px;
 }
 
 .navbar>form {
@@ -79,12 +81,19 @@ a {
 }
 
 .navbar>form>input {
-    border-radius: 8px;
+    border-radius: 12px;
+    background-color: #e2e8f0;
+    border: none;
+    min-height: 24px;
 }
 
 .navbar .usernavinfo {
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 24px 36px auto;
+    column-gap: 12px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 150px;
 }
 
 .navbar>form>button {
@@ -95,6 +104,11 @@ a {
 .navbar svg {
     max-width: 24px;
     max-height: 24px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .useractions {
