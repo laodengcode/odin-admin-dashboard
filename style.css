@@ -114,7 +114,43 @@ a {
 .useractions {
     grid-area: 2/2/3/6;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr auto auto auto;
+    padding: 20px 40px;
+    align-items: center;
+    gap: 24px;
+}
+
+.userid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.greeting {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 4px;
+}
+
+.hello {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.userfullname {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+header>button {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    height: 24px;
+    width: 96px;
 }
 
 .content {
