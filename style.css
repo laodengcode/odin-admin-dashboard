@@ -159,10 +159,11 @@ header>button {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    background-color: gainsboro;
+    background-color: #e2e8f0;
     padding-left: 24px;
     padding-bottom: 24px;
     column-gap: 24px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .projects>h2,
@@ -250,4 +251,10 @@ header>button {
 
 .slogen {
     color: grey;
+}
+
+.card-announcements,
+.users,
+.card {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
