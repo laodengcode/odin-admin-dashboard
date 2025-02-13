@@ -165,7 +165,8 @@ header>button {
     column-gap: 24px;
 }
 
-.projects>h2 {
+.projects>h2,
+.announcements>h2 {
     padding-top: 24px;
     padding-bottom: 16px;
 }
@@ -208,4 +209,27 @@ header>button {
 
 .content .sidebarinfo {
     grid-area: 1/2/1/3;
+}
+
+.card-announcements {
+    background-color: white;
+    border-radius: 18px;
+    padding: 36px;
+    width: fit-content;
+    display: grid;
+    row-gap: 24px;
+}
+
+.announcement {
+    max-width: 360px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 24px;
+}
+
+.announcement>p {
+    color: gainsboro;
+}
+
+.announcement:last-child {
+    border: none;
 }
