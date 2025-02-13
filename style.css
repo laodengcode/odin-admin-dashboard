@@ -166,7 +166,8 @@ header>button {
 }
 
 .projects>h2,
-.announcements>h2 {
+.announcements>h2,
+.trending>h2 {
     padding-top: 24px;
     padding-bottom: 16px;
 }
@@ -222,7 +223,7 @@ header>button {
 
 .announcement {
     max-width: 360px;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid gainsboro;
     padding-bottom: 24px;
 }
 
@@ -232,4 +233,21 @@ header>button {
 
 .announcement:last-child {
     border: none;
+}
+
+.users {
+    background-color: white;
+    width: fit-content;
+    border-radius: 18px;
+    padding: 36px;
+    display: grid;
+    row-gap: 24px;
+}
+
+.userid {
+    width: 360px;
+}
+
+.slogen {
+    color: grey;
 }
